@@ -11,7 +11,7 @@ Artificial intelligence (AI) is on a rapid path to becoming a key component in a
 The environment has 2 agents that control rackets to bounce balls over the net. The reward structure for states is as follows:
 
 | States                   | Reward|
-|:------------------------:|:----_:|
+|:------------------------:|:-----:|
 |    Hit Over the Net      | +0.1  |
 | Ball Hits the Ground     | -0.01 |
 
