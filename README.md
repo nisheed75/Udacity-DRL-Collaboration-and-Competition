@@ -79,7 +79,8 @@ The Ornstein-Uhlenbeck implementations can be found [here](https://github.com/ni
 #### Hyperparamters
 The following Hyperparamters were used:
 
-```BUFFER_SIZE = int(1e6)  # replay buffer size
+```
+BUFFER_SIZE = int(1e6)  # replay buffer size
 BATCH_SIZE = 128        # minibatch size
 LR_ACTOR = 1e-3         # learning rate of the actor
 LR_CRITIC = 1e-3        # learning rate of the critic
@@ -92,7 +93,8 @@ OU_SIGMA = 0.2          # Ornstein-Uhlenbeck noise parameter, volatility
 OU_THETA = 0.11         # Ornstein-Uhlenbeck noise parameter, speed of mean reversion
 EPS_START = 5.5         # initial value for epsilon in noise decay process in Agent.act()
 EPS_EP_END = 250        # episode to end the noise decay process
-EPS_FINAL = 0           # final value for epsilon after decay```
+EPS_FINAL = 0           # final value for epsilon after decay
+```
 
 
 Ornstein-Uhlenbeck process itself has three hyperparameters that determine the noise characteristics and magnitude:
