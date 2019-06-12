@@ -76,6 +76,19 @@ Since the agent starts the episode without knowing what action to take, we need 
 
 The Ornstein-Uhlenbeck implementations can be found [here](https://github.com/nisheed75/Udacity-DRL-Collaboration-and-Competition/blob/master/maddpg_agent.py#L167) in the `OUNoise` class in `maddpg_agent.py`.
 
+#### Model Architecture
+The Udacity provided DDPG code in PyTorch was used and adapted for this 20 agent environment.
+
+The algorithm uses two deep neural networks (actor-critic) with the following struture:
+- Actor    
+    - Hidden: (input, 128)  - ReLU
+    - Hidden: (128, 128)    - ReLU
+    - Output: (128, 4)      - TanH
+
+- Critic
+    - Hidden: (input, 128)              - ReLU
+    - Hidden: (128 + action_size, 128)  - ReLU
+    - Output: (128, 1)                  - Linear
 
 #### Hyperparamters
 The following Hyperparamters were used:
